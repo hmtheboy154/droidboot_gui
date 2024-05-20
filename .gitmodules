@@ -1,15 +1,15 @@
 [submodule "lib/ext4"]
 	path = lib/ext4
-	url = https://github.com/Android-Boot-Manager/droidboot_ext4
+	url = https://github.com/hmtheboy154/droidboot_ext4
 [submodule "lib/lvgl"]
 	path = lib/lvgl
 	url = https://github.com/Android-Boot-Manager/droidboot_lvgl
 [submodule "droidboot_platforms"]
 	path = droidboot_platforms
-	url = https://github.com/Android-Boot-Manager/droidboot_platforms
+	url = https://github.com/hmtheboy154/droidboot_platforms
 [submodule "lib/libufdt"]
 	path = lib/libufdt
 	url = https://github.com/Android-Boot-Manager/libufdt
 [submodule "lib/minigz"]
 	path = lib/minigz
-	url = https://github.com/Android-Boot-Manager/droidboot_minigz
+	url = https://github.com/hmtheboy154/droidboot_minigz
