@@ -1,3 +1,4 @@
+#ifndef PLATFORM_UBOOT
 #pragma once
 #include <stdio.h>
 #include <stdlib.h>
@@ -33,3 +34,4 @@ bool fdt_get_memory(fdt*fdt,int index,uint64_t*base,uint64_t*size);
 int fdt_add_memory(void *dtb_raw, uint64_t addr, uint64_t size);
 droidboot_error droidboot_dtb_update_cmdline(void *dtb_raw, char *cmdline_to_add);
 
+#endif
