@@ -9,6 +9,9 @@
 #include <ext4.h>
 #include <libc-hack.h>
 
+#ifdef PLATFORM_UBOOT
+#include <vsprintf.h>
+#endif
 
 file_metadata droidboot_read_file_metadata(const char *metadata_file_path, unsigned long physical_partition_offset) {
     ext4_file fp;
