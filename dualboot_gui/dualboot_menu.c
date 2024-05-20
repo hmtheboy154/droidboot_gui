@@ -17,6 +17,10 @@
 // droidboot_platforms_common.h is part of droidboot_platform and contains all functions used by droidboot gui
 #include <droidboot_platforms/common/droidboot_platform_common.h>
 
+#ifdef PLATFORM_UBOOT
+#include <vsprintf.h>
+#endif
+
 int droidboot_exit;
 int timeout;
 lv_obj_t *timeout_label;

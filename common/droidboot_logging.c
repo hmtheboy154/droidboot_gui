@@ -5,6 +5,10 @@
 #include <droidboot_logging.h>
 #include <droidboot_config.h>
 
+#ifdef PLATFORM_UBOOT
+#include <vsprintf.h>
+#endif
+
 void droidboot_show_error(const char *buf)
 {
 	if(get_lvgl_init_done()) {

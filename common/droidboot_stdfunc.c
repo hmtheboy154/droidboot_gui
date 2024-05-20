@@ -1,5 +1,9 @@
 #include <stdbool.h>
 
+#ifdef PLATFORM_UBOOT
+#include <linux/ctype.h>
+#endif
+
 static inline bool _is_digit(char ch)
 {
     return (ch >= '0') && (ch <= '9');
@@ -26,7 +30,9 @@ unsigned int droidboot_atoi(char* str)
 
 #define LONG_MAX ((long)(~0UL>>1))
 #define LONG_MIN (~LONG_MAX)
+#ifndef PLATFORM_UBOOT
 int isspace(int c); /* <-- Forward declare from <ctype.h> */
+#endif
 
 long droidboot_strtol(const char *restrict nptr, char **restrict endptr, int base) {
     const char *p = nptr, *endp;
